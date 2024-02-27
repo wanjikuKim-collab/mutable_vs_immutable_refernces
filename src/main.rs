@@ -1,3 +1,4 @@
+//mutable and immutable variables
 fn main() {
     let mut s = String::from("hello"); 
     let r1 = &s;
@@ -5,5 +6,6 @@ fn main() {
 
     println!("r1:{} and r2:{} are immutable references", r1, r2);
     
+    //borrowing s when it's out of scope for the immutable variables
     let r3: &mut String = &mut s;
 }
