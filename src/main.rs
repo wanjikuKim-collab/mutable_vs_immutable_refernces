@@ -8,4 +8,5 @@ fn main() {
     
     //borrowing s when it's out of scope for the immutable variables
     let r3: &mut String = &mut s;
+    println!("r3:{} is a mutable reference", r3);
 }
